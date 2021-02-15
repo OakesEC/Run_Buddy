@@ -36,9 +36,29 @@ header nav ul li {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    margin: 0 20px;
     font-weight: lighter;
     font-size: 22px;
+}
+
+/* Hero Style Start */
+.hero {
+    /* do I need to add padding: 60px; bacl in? */
+    padding: 60px;
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+/* Hero Style End */
+
+/* Hero form styles */
+.hero-form {
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: solid 3px #024e76;
 }
 
 /*apply styles to footer*/
