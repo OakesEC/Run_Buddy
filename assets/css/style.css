@@ -19,7 +19,6 @@ header h1 {
     color: #fce138;
     margin: 0;
     display: inline;
-}
 
 header a {
     text-decoration: none;
@@ -63,7 +62,6 @@ header nav ul li a {
     position: absolute;
     bottom: 120px;
     right: 140px;
-}
 
 /*apply styles to footer*/
 footer {
