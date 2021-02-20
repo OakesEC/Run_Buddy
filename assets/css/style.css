@@ -88,17 +88,16 @@ section {
   background-position: center;
   position: relative;
 }
-/* Hero Style End */
 
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
-  width: 500px;
+  width: 600px;
   color: #024e76;
-  position: absolute;
   bottom: 120px;
   right: 140px;
+  position: absolute;
 }
 
 .hero-form h3 {
