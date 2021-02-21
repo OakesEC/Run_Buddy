@@ -1,16 +1,17 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+
+/* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -21,10 +22,11 @@ header {
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -39,26 +41,20 @@ header nav ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  list-style: none
-  ;
+  list-style: none;
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
-.page-title {
-  color: #fce138;
-  display: inline-block;
-  border-bottom: 4px solid #fce138;
-  padding: 0 80px 15px 80px;
-  font-weight: normal;
-  font-size: 42px;
-  font-style: italic;
-}
+/* HEADER / NAVBAR STYLES END */
 
+
+
+/* FOOTER STYLES START */
 footer {
   background: #fce138;
   width: 100%;
@@ -82,32 +78,46 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* HERO STYLES START */
 .hero {
   background-image: url('../images/hero-bg.jpg');
-  height: 600px;
   background-size: cover;
   background-position: center;
-  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flext flex-start;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
-  width: 600px;
+  width: 40%;
   color: #024e76;
-  bottom: 120px;
-  right: 140px;
-  position: absolute;
+  margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -138,24 +148,31 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  width: 40%;
-  margin: 3.5%;
+}
+/* HERO STYLES ENDS */
+
+
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 48px;
+  color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+  border-bottom: 3px solid;
 }
 
-.hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.3;
+.primary-border {
+  border-color: #fce138;
 }
 
-.hero-cta h2 {
-  font-style: italic;
-  font-size: 55px;
-  color: #fce138;
+.secondary-border {
+  border-color: #39a6b2;
 }
+/* SECTION TITLE STYLES ENDS */
+
+/* WHAT WE DO STYLES */
 
 .intro p {
   line-height: 1.7;
@@ -165,7 +182,10 @@ section {
   margin: 0 auto;
   text-align: center;
 }
+/* WHAT YOU DO STYLES END */
 
+
+/* WHAT YOU DO STYLES START */
 .steps {
   background: #fce138;
 }
@@ -187,17 +207,6 @@ section {
   flex: 1 30%;
 }
 
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
-}
-
-.step-text p {
-  color: #39a6b2;
-  font-size: 18px;
-}
-
 .step-info {
   flex: 2 70%;
   display: flex;
@@ -210,81 +219,67 @@ section {
   margin-right: 20px;
 }
 
-.step-text {
-  flex: 12;
-}
-
 .step-img img {
   max-width: 100%;
 }
 
-.section-title {
-  font-size: 55px;
+.step-text {
+  flex: 12;
+}
+
+.step-text p {
+  color: #39a6b2;
+  font-size: 18px;
+}
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
   color: #024e76;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-  border-bottom: 3px solid;
 }
 
-.primary-border {
-  border-color: #fce138;
-}
+/* WHAT YOU DO STYLES END */
 
-.secondary-border {
-  border-color: #39a6b2;
-}
-
+/* MEET THE TRAINERS START */
 .trainers {
- width: 100%;
- margin: 0 auto;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
-}
-
-.trainer {
-  margin: 20px;
-  background: #024e76;
-  color: #fce138;
-  flex: 1;
-}
-
-.trainer img {
   width: 100%;
-}
-
-.trainer-bio {
-  padding: 25px;
-  line-height: 1.3;
-}
-
-.trainer-bio h3 {
-  font-size: 28px;
-}
-
-.trainer-bio h4 {
-  font-weight: lighter;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.trainer-bio p {
-  font-size: 17px;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.flex-row {
+  margin: 0 auto;
   display: flex;
-}
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
+ 
+ .trainer {
+   margin: 20px;
+   background: #024e76;
+   color: #fce138;
+   flex: 1;
+ }
+ 
+ .trainer img {
+   width: 100%;
+ }
+ 
+ .trainer-bio {
+   padding: 25px;
+   line-height: 1.3;
+ }
+ 
+ .trainer-bio h3 {
+   font-size: 28px;
+ }
+ 
+ .trainer-bio h4 {
+   font-weight: lighter;
+   font-size: 22px;
+   margin-bottom: 15px;
+ }
+ 
+ .trainer-bio p {
+   font-size: 17px;
+ }
+/* TRAINER STYLES END */
+
 /* REACH OUT STYLES START */
 .contact {
   background: #024e76;
@@ -304,6 +299,7 @@ section {
   flex: 1;
   margin: 15px;
 }
+
 .contact-info iframe {
   height: 400px;
 }
@@ -317,8 +313,7 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
@@ -336,7 +331,7 @@ section {
   margin-top: 5px;
 }
 
-.contract-form button {
+.contact-form button {
   width: 100%;
   border: none;
   background: #fce138;
@@ -350,4 +345,41 @@ section {
   color: #fce138;
 }
 
+
 /* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  
+}
+
+
+
+
